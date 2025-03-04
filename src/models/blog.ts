@@ -18,4 +18,4 @@ const blogSchema = new Schema<Blogs>({
 
 )
 
-export const Blog = models.Blog || model<Blogs>('Blogs', blogSchema)
+export const Blog = models.Blogs || model<Blogs>('Blogs', blogSchema)
