@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import mongoose from "mongoose";
 
 const connectDB = async(url : string) =>{ //menerima parameter url
