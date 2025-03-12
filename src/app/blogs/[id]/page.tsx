@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
 
 import { EditDelete } from "@/components/blogs/EditDelete"
 import Image from "next/image"
@@ -32,7 +32,7 @@ export default async function BlogDetail({params}: {params :{id:string}}){ //Obj
                 <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
                     <div className="flex justify-between items-center">
                         <p className="text-sm text-blue-500 uppercase">category</p>
-                        <EditDelete />
+                        <EditDelete blog={blog.data}/>
                     </div>
 
                     <div className="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
