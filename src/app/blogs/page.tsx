@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import BlogList from "@/components/blog/BlogList"
+import BlogList from "@/components/blogs/BlogList"
 
 async function fetchBlogs(){
     try {

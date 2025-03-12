@@ -26,7 +26,7 @@ import { Button } from "../ui/button"
         </CardContent>
             <CardFooter>
                 <div className="flex flex-col gap-4">
-                    <CardDescription>{blog.description.slice(0,120)}</CardDescription>
+                    <CardDescription>{blog.description.slice(0,120)} ...</CardDescription>
                     <Link href={`/blogs/${blog._id}`}>
                         <Button className="bg-slate-400">
                             Read More

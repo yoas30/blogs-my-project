@@ -4,6 +4,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ModeToggle } from './ModeToggle'
+import AddBlog from './blogs/AddBlog'
+import { Button } from './ui/button'
 
 
 const navMenu:{title:string, path:string}[] =[
@@ -40,9 +42,13 @@ export default function Header(){
     <div className='flex items-center gap-x-1 lg:gap-x-2 ms-auto py-1 lg:ps-6 lg:order-3 lg:col-span-3'>
 
       <ModeToggle />
-      <button type='button' className='py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium text-nowrap rounded-xl border border-transparent bg-lime-400 text-black hover:bg-lime-500 focus:outline-hidden focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none'>
-        Hire us
-      </button>
+      <AddBlog 
+        title='Add New blog' 
+        description='Create your blog here. Click save when you`re done.'>
+        <Button className='py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium text-nowrap rounded-xl border border-transparent bg-lime-400 text-black hover:bg-lime-500 focus:outline-hidden focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none'>
+          Add Blog
+        </Button>
+      </AddBlog>
 
       <div className='lg:hidden'>
         <button type='button' className='hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700' id='hs-navbar-hcail-collapse' aria-expanded='false' aria-controls='hs-navbar-hcail' aria-label='Toggle navigation' data-hs-collapse='#hs-navbar-hcail'>
